@@ -1,6 +1,7 @@
 package edu.icet.shop.model.Entity;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import lombok.*;
 
 @Getter
@@ -10,6 +11,7 @@ import lombok.*;
 @ToString
 @Entity
 public class Product {
+    @Id
     private String id;
     private String name;
     private String description;
