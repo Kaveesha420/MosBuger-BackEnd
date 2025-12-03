@@ -1,4 +1,7 @@
 package edu.icet.shop.Repositry;
 
-public interface ProductRepositry {
+import edu.icet.shop.model.Entity.Product;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ProductRepositry extends JpaRepository<Product,String> {
 }
