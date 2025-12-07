@@ -1,5 +1,6 @@
 package edu.icet.shop.model.Entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.*;
@@ -12,6 +13,7 @@ import lombok.*;
 @Entity
 public class Customer {
     @Id
+    @Column(name = "customer_Id")
     private String id;
     private String name;
     private String age;
