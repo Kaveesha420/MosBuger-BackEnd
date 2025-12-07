@@ -1,5 +1,6 @@
 package edu.icet.shop.model.Entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.*;
@@ -12,7 +13,8 @@ import lombok.*;
 @Entity
 public class Product {
     @Id
-    private String id;
+    @Column(name = "product_Id")
+    private String productId;
     private String name;
     private String description;
     private int qty;
